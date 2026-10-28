@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Synthetic temporal graph regression; NOT scientific observations",
+  "episodes": [
+    {
+      "id": "ep1",
+      "observed_at": "2026-01-01T00:00:00Z",
+      "valid_from": "2026-01-01T00:00:00Z",
+      "entity": "Transpiler::Lua->Python::switch",
+      "claim": "unsupported",
+      "source": "synthetic/ep1"
+    },
+    {
+      "id": "ep2",
+      "observed_at": "2026-02-01T00:00:00Z",
+      "valid_from": "2026-02-01T00:00:00Z",
+      "entity": "Transpiler::Lua->Python::switch",
+      "claim": "supported",
+      "source": "synthetic/ep2"
+    },
+    {
+      "id": "ep3",
+      "observed_at": "2026-03-01T00:00:00Z",
+      "valid_from": "2026-03-01T00:00:00Z",
+      "entity": "Transpiler::Lua->Python::switch",
+      "claim": "regressed",
+      "source": "synthetic/ep3"
+    },
+    {
+      "id": "ep4",
+      "observed_at": "2026-01-01T00:00:00Z",
+      "valid_from": "2026-01-01T00:00:00Z",
+      "entity": "Transpiler::C->CSharp::loop",
+      "claim": "supported",
+      "source": "synthetic/ep4"
+    }
+  ],
+  "queries": [
+    {
+      "at": "2026-01-15T00:00:00Z",
+      "entity": "Transpiler::Lua->Python::switch",
+      "expected": "unsupported",
+      "expected_source": "synthetic/ep1"
+    },
+    {
+      "at": "2026-02-15T00:00:00Z",
+      "entity": "Transpiler::Lua->Python::switch",
+      "expected": "supported",
+      "expected_source": "synthetic/ep2"
+    },
+    {
+      "at": "2026-03-15T00:00:00Z",
+      "entity": "Transpiler::Lua->Python::switch",
+      "expected": "regressed",
+      "expected_source": "synthetic/ep3"
+    },
+    {
+      "at": "2026-03-15T00:00:00Z",
+      "entity": "Transpiler::C->CSharp::loop",
+      "expected": "supported",
+      "expected_source": "synthetic/ep4"
+    }
+  ]
+}

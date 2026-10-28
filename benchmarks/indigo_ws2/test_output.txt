@@ -1,0 +1,31 @@
+/home/ubuntu/sprint01/.venv/lib/python3.11/site-packages/pytest_asyncio/plugin.py:208: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+============================= test session starts ==============================
+platform linux -- Python 3.11.17, pytest-8.3.3, pluggy-1.7.0 -- /home/ubuntu/sprint01/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/ubuntu/sprint01/ws2_graphiti
+configfile: pytest.ini
+plugins: anyio-4.15.1, asyncio-0.24.0
+asyncio: mode=Mode.AUTO, default_loop_scope=None
+collecting ... collected 15 items
+
+tests/test_graphiti_benchmark.py::test_as_of_query_claim[Lua->Python@2026-01-15] PASSED [  6%]
+tests/test_graphiti_benchmark.py::test_as_of_query_claim[Lua->Python@2026-02-15] PASSED [ 13%]
+tests/test_graphiti_benchmark.py::test_as_of_query_claim[Lua->Python@2026-03-15] PASSED [ 20%]
+tests/test_graphiti_benchmark.py::test_as_of_query_claim[C->CSharp@2026-03-15] PASSED [ 26%]
+tests/test_graphiti_benchmark.py::test_source_provenance[src-1] PASSED   [ 33%]
+tests/test_graphiti_benchmark.py::test_source_provenance[src-2] PASSED   [ 40%]
+tests/test_graphiti_benchmark.py::test_source_provenance[src-3] PASSED   [ 46%]
+tests/test_graphiti_benchmark.py::test_source_provenance[src-4] PASSED   [ 53%]
+tests/test_graphiti_benchmark.py::test_reference_agrees_with_graphiti PASSED [ 60%]
+tests/test_graphiti_benchmark.py::test_history_retained_not_deleted PASSED [ 66%]
+tests/test_graphiti_benchmark.py::test_unrelated_fact_not_invalidated PASSED [ 73%]
+tests/test_graphiti_benchmark.py::test_abstain_before_first_episode_and_unknown_entity PASSED [ 80%]
+tests/test_graphiti_benchmark.py::test_restart_persistence PASSED        [ 86%]
+tests/test_graphiti_benchmark.py::test_bitemporal_late_correction PASSED [ 93%]
+tests/test_graphiti_benchmark.py::test_zero_external_calls PASSED        [100%]
+
+------- generated xml file: /home/ubuntu/sprint01/ws2_graphiti/junit.xml -------
+============================== 15 passed in 7.95s ==============================
